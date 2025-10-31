@@ -1,0 +1,152 @@
+/* Genel Bölüm Stili */
+.section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* BAŞLIK VE AÇIKLAMA ORTALAMA VE BOYUT AYARLARI */
+.classes-header {
+  text-align: center; /* Başlık ve Açıklama Metnini ortalar */
+  margin-bottom: 50px;
+}
+
+.classes-title {
+  font-size: 3rem; /* Boyut BÜYÜTÜLDÜ */
+  font-weight: 800;
+  color: #1e1e1e;
+  margin-bottom: 5px;
+}
+
+/* Sarı Alt Çizgi Stili */
+.underline {
+  width: 60px;
+  height: 3px;
+  background-color: #ffc107; /* Sarı renk */
+  margin: 0 auto 20px auto; /* Ortalanmasını sağlar */
+}
+
+.classes-description {
+  font-size: 1.15rem; /* Boyut BÜYÜTÜLDÜ */
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  color: #6c757d;
+}
+
+/* Sekme Butonları */
+.class-buttons {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.class-btn {
+  margin: 0 10px;
+  padding: 12px 30px; /* Boyut BÜYÜTÜLDÜ */
+  border-radius: 6px;
+  border: none;
+  background: #0a4890;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem; /* Boyut BÜYÜTÜLDÜ */
+  transition: 0.3s;
+}
+.class-btn.active {
+  background: #ffc107;
+  color: black;
+}
+.class-btn:hover {
+  opacity: 0.9;
+}
+
+/* --- İçerik Bölümü (Metin ve Görsel) --- */
+.class-sections {
+  /* Birden fazla içerik gösterimini yöneten kapsayıcı */
+}
+
+.class-section {
+  display: none; /* Varsayılan olarak gizli */
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 0 auto; /* İçerik bloğunu ORTALAR */
+  gap: 50px;
+  margin-top: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.class-section.active {
+  display: flex; /* Aktif olanı gösterir */
+}
+
+.class-text {
+  flex: 1;
+  text-align: left; /* Metin sola hizalı */
+}
+
+.class-text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.class-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+.class-text h4 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+
+.class-text ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+.class-text ul li {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  color: #495057;
+}
+
+.class-image {
+  flex: 1;
+  max-width: 450px;
+}
+.class-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .class-section {
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .class-text {
+    text-align: center;
+  }
+  .class-text ul {
+    text-align: center;
+  }
+  .class-image {
+    max-width: 100%;
+  }
+}

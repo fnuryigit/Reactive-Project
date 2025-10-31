@@ -1,0 +1,90 @@
+/* Hero Bileşenini Doldurma ve Konumlandırma */
+.hero {
+  width: 100%;
+  /* height: 100vh; bu zaten style prop'unda var */
+  /* display: flex; bu da style prop'unda var */
+}
+
+.hero .container {
+  max-width: 800px; /* İçerik genişliği */
+  /* Soldan boşluk bırakarak ilk görseldeki konuma hizalama */
+  margin-left: 300px;
+  margin-right: auto;
+  /* Paddingler yerine Hero bileşeni kendi yüksekliğini ayarlar. */
+  padding: 20px; /* Kenarlara güvenlik amaçlı padding */
+  display: flex;
+  flex-direction: column;
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+
+/* POWERFULL etiketi stili (span kullandığınız varsayılmıştır) */
+.tag {
+  background-color: #0a4890;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 25px; /* Başlıktan biraz daha fazla boşluk */
+  align-self: flex-start; /* Sola Hizalama */
+}
+
+/* Başlık Stili */
+.hero h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+/* Paragraf Stili */
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Butonları içeren kısım */
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Genel Buton Stili (Sign Up butonu için) */
+.btn {
+  background-color: #0a4890; /* Mavi arka plan */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #063770; /* Koyu mavi */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Details butonu stili */
+.btn-details {
+  background-color: transparent;
+  border: 2px solid white; /* Beyaz çizgi */
+  color: white;
+}
+
+.btn-details:hover {
+  background-color: white;
+  color: #0a4890;
+  border-color: white;
+}

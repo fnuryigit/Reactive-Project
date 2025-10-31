@@ -1,0 +1,83 @@
+.bmi-wrap {
+  width: 100%;
+}
+
+.bmi-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.bmi-text {
+  flex: 1;
+}
+.bmi-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.bmi-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.bmi-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+.bmi-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+.bmi-form input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d0d5dd;
+}
+
+.bmi-output {
+  margin-top: 16px;
+  display: grid;
+  place-items: center;
+  gap: 6px;
+}
+#bmiResult {
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.bmi-image {
+  flex: 1.2;
+  text-align: right;
+}
+.bmi-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mobil için */
+@media (max-width: 768px) {
+  .bmi-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bmi-text,
+  .bmi-image {
+    text-align: center;
+  }
+  .bmi-image img {
+    max-width: 90%;
+    margin: 20px auto 0 auto;
+  }
+  .bmi-form {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
