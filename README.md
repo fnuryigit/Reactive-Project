@@ -25,3 +25,5 @@ Powerfull Fitness Center, **React** ile geliştirilmiş modern ve responsive bir
 
 ---
 
+## Projenin canlı linki:
+
